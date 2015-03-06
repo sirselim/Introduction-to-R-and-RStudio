@@ -22,8 +22,8 @@ opts_chunk$set(prompt=TRUE, comment='', results='markup')
 
 
 
+#The problem with footnotes
 
-# References
+This is a footnote[^fn1].
 
-
-
+[^fn1]: This is the footnote text.
