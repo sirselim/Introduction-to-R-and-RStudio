@@ -1,0 +1,24 @@
+{
+    "links": {
+        "home": "http://sirselim.github.io/",
+        "about": "http://sirselim.github.io/about",
+        "issues": null,
+        "edit": null,
+
+        "sharing": {
+            "github": "https://github.com/sirselim",
+            "twitter": "https://twitter.com/miles_benton",
+            "researchgate": "https://www.researchgate.net/profile/Miles_Benton"
+        }
+    }
+}
+
+
+{
+    "links": {
+        "sidebar": {
+            "home": "http://sirselim.github.io/",
+            "about": "http://sirselim.github.io/about"
+             },
+        }
+}
