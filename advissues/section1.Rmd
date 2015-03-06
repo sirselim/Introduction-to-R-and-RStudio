@@ -18,6 +18,7 @@ opts_chunk$set(prompt=TRUE, comment='', results='markup')
 
 
 
+
 #The problem with footnotes
 
 This is a footnote[^fn1].
