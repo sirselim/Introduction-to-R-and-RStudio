@@ -35,7 +35,7 @@
     
 
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="Fri Mar 06 2015 15:29:59 GMT+1300 (NZDT)">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Fri Mar 06 2015 15:34:15 GMT+1300 (NZDT)">
     
 
 <div class="book-summary">
@@ -712,8 +712,17 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="linux">Linux</h1>
-
+                        <h2 id="linux">Linux</h2>
+<p>At the time of writing there are four Linux distributions that have R binaries available; debian, redhat, suse and Ubuntu.  They are located here: <a href="http://cran.r-project.org/bin/linux" target="_blank">http://cran.r-project.org/bin/linux</a>
+I&#x2019;m not sure if these binaries would work under alternate distributions (likely in most cases, but your mileage may vary). </p>
+<p>The R source code can be downloaded and compiled with little hassle on most Linux distros.  A guide for compiling R can be found here: <a href="http://cran.r-project.org/doc/manuals/R-admin.pdf" target="_blank">http://cran.r-project.org/doc/manuals/R-admin.pdf</a> </p>
+<p>Example installation under Debian/Ubuntu
+To install the complete R system, use:</p>
+<pre><code>sudo apt-get update
+sudo apt-get install r-base
+</code></pre><p>Users who need it can also install the r-base-dev package (development release):</p>
+<pre><code>sudo apt-get install r-base-dev
+</code></pre>
                     
                     </section>
                 

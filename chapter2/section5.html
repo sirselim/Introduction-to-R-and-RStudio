@@ -35,7 +35,7 @@
     
 
         
-    <div class="book" data-level="2.5" data-basepath=".." data-revision="Fri Mar 06 2015 15:29:59 GMT+1300 (NZDT)">
+    <div class="book" data-level="2.5" data-basepath=".." data-revision="Fri Mar 06 2015 15:34:15 GMT+1300 (NZDT)">
     
 
 <div class="book-summary">
@@ -712,7 +712,20 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="installing-bioconductor">Installing Bioconductor</h1>
+                        <h2 id="installing-bioconductor">Installing Bioconductor</h2>
+<blockquote>
+<p>&#x201C;Bioconductor provides tools for the analysis and comprehension of high-throughput genomic data.  Bioconductor uses the R statistical programming language, and is open source and open development.  It has two releases each year, more than 460 packages, and an active user community.&#x201D;</p>
+</blockquote>
+<p>We won&#x2019;t cover the use of Bioconductor in this workshop, but I&#x2019;ve included some information to get you started if you are interested in exploring Bioconductor and its packages.</p>
+<p>Use the <code>biocLite.R script</code> to install Bioconductor packages. To install a particular package, e.g., limma, type the following in an R command window:</p>
+<pre><code class="lang-r"><span class="hljs-keyword">source</span>(<span class="hljs-string">&quot;http://bioconductor.org/biocLite.R&quot;</span>) <span class="hljs-comment"># downloads the latest bioconductor script/repos</span>
+biocLite(<span class="hljs-string">&quot;limma&quot;</span>)
+</code></pre>
+<p>To install a selection of core Bioconductor packages, use:</p>
+<pre><code class="lang-r">biocLite()
+</code></pre>
+<p>Packages and their dependencies installed by this usage are: affy, affydata, affyPLM, affyQCReport, annaffy, annotate, Biobase, biomaRt, Biostrings, DynDoc, gcrma, genefilter, geneplotter, GenomicRanges, hgu95av2.db, limma, marray, multtest, vsn, and xtable. </p>
+<p>After downloading and installing these packages, the script prints &quot;Installation complete&quot; and &quot;TRUE&quot;.  <strong>Warning: there are some large packages, the whole set might take a while to download.</strong></p>
 
                     
                     </section>

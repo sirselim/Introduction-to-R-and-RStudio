@@ -35,7 +35,7 @@
     
 
         
-    <div class="book" data-level="2.6" data-basepath=".." data-revision="Fri Mar 06 2015 15:29:59 GMT+1300 (NZDT)">
+    <div class="book" data-level="2.6" data-basepath=".." data-revision="Fri Mar 06 2015 15:34:15 GMT+1300 (NZDT)">
     
 
 <div class="book-summary">
@@ -712,7 +712,32 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="updating-packages">Updating Packages</h1>
+                        <h2 id="updating-packages">Updating Packages</h2>
+<p>There are several ways that this may be achieved:</p>
+<ol>
+<li><p>Auto-update in RStudio
+This is the easiest way to update and maintain your packages.  A package update option has been included since version 94.XX, just go to the packages tab and select search for updates.  This will open a window and display which (if any) packages have newer versions available.  This works for both CRAN and Bioconductor packages.<sup><a href="#fn_fn5" id="reffn_fn5">fn5</a></sup></p>
+</li>
+<li><p>Via console
+Bioconductor packages, especially those in the development branch, are updated fairly regularly.  To identify packages requiring update, start a new session of R and enter:</p>
+<pre><code class="lang-r"><span class="hljs-comment"># bioconductor</span>
+<span class="hljs-keyword">source</span>(<span class="hljs-string">&quot;http://bioconductor.org/biocLite.R&quot;</span>)
+old.packages(repos = biocinstallRepos())
+<span class="hljs-comment"># CRAN packages</span>
+old.packages()
+</code></pre>
+</li>
+</ol>
+<p>To update all installed packages that are out of date enter:</p>
+<pre><code class="lang-r"><span class="hljs-comment"># bioconductor</span>
+update.packages(repos = biocinstallRepos(), ask = <span class="hljs-literal">FALSE</span>, checkBuilt = <span class="hljs-literal">TRUE</span>)
+<span class="hljs-comment"># CRAN packages</span>
+update.packages()
+</code></pre>
+<hr>
+<blockquote id="fn_fn5">
+<sup>fn5</sup>. This ability appears to change between RStudio releases.  As of the current release (0.96.331) it is working.<a href="#reffn_fn5" title="Jump back to footnote [fn5] in the text."> &#x21A9;</a>
+</blockquote>
 
                     
                     </section>

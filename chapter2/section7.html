@@ -35,7 +35,7 @@
     
 
         
-    <div class="book" data-level="2.7" data-basepath=".." data-revision="Fri Mar 06 2015 15:29:59 GMT+1300 (NZDT)">
+    <div class="book" data-level="2.7" data-basepath=".." data-revision="Fri Mar 06 2015 15:34:15 GMT+1300 (NZDT)">
     
 
 <div class="book-summary">
@@ -712,7 +712,24 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="r-development-version">R Development Version</h1>
+                        <h2 id="r-development-version">R Development Version</h2>
+<p><em>A brief note on using development versions:</em></p>
+<p>There are development versions of <code>R</code> and Bioconductor available for public use.  These are nightly builds and as such are not fully stable (read: likely to contain bugs!).  However they contain the most up-to-date version of the software and may have specific functions and features that aren&#x2019;t present in the current stable release.<sup><a href="#fn_fn6" id="reffn_fn6">fn6</a></sup></p>
+<p>For example the most recent stable <code>R</code> build is 2.15.1, while the development version is currently at 2.16.0 (the Developer&#x2019;s aim to release an updated stable version of <code>R</code> yearly).  Bioconductor releases follow a 6 monthly release cycle; at the moment Bioconductor stable is 2.10, development is at 2.11 and is expected for stable release in October 2012.  If you are interested in using <code>R</code> and Bioconductor to analyse microarray data that was generated on newer technology, you&#x2019;ll more than likely require development versions of the software to access all the analytical functionality as it is updated frequently by package developers.</p>
+<p>To install the developer&#x2019;s version of <code>R</code> visit the development section of the official site and follow the links to the required build (i.e. Windows, Linux, Mac).  Follow the instructions detailed above to install.</p>
+<p>Once you have the development version of <code>R</code> installed you&#x2019;ll be able to install the latest Bioconductor development release using the same code as detailed above (see section &#x201C;Installing Bioconductor&#x201D;).</p>
+<h3 id="current-development-links">Current development links:</h3>
+<p>Windows 32/64bit: 
+<a href="http://cran.r-project.org/bin/windows/base/rdevel.html" target="_blank">http://cran.r-project.org/bin/windows/base/rdevel.html</a>
+<strong>Note:</strong> <em>Windows versions can be compiled via source, though you&#x2019;ll need a gcc compatible compiler &#x2013; if this is all jargon to you just stick with the binary installers.</em></p>
+<p>Linux 32/64bit:
+<a href="http://cran.r-project.org/bin/linux/" target="_blank">http://cran.r-project.org/bin/linux/</a> (you&#x2019;ll have to choose flavour, download via sudo, or compile from source)</p>
+<p>Mac 32/64bit:
+<a href="http://r.research.att.com/" target="_blank">http://r.research.att.com/</a></p>
+<hr>
+<blockquote id="fn_fn6">
+<sup>fn6</sup>. It&#x2019;s highly likely that you&#x2019;ll have to download &#x2018;nightly&#x2019; builds of R quite regularly as many Bioconductor developers use these when writing their packages.  Fear not, this isn&#x2019;t as gruelling as it may sound.<a href="#reffn_fn6" title="Jump back to footnote [fn6] in the text."> &#x21A9;</a>
+</blockquote>
 
                     
                     </section>
